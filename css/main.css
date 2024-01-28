@@ -1,0 +1,138 @@
+/* HERO SECTION */
+.hero {
+  background-color: var(--secondary-color);
+}
+.hero-container {
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+}
+.hero-container__img {
+  width: 30rem;
+}
+.hero-container__title {
+  margin-top: 4rem;
+  width: 55%;
+}
+.hero-container__title h1 {
+  font-size: var(--essencial-font);
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 2rem;
+}
+
+.hero-container__title p {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 2rem;
+  line-height: 25px;
+}
+.btn {
+  background-color: var(--active-color);
+  border: none;
+  padding: var(--secondary-padding);
+  border-radius: 50px;
+  transition: transform 1s ease-in-out;
+}
+.btn a {
+  color: var(--background-color);
+  font-size: 1.2rem;
+}
+.btn:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* RECOMMENDATIN SECTION */
+.card {
+  padding: 2rem 0;
+}
+.card_title {
+  color: var(--primary-color);
+  margin: 2rem 8rem;
+  font-size: 2rem;
+}
+.card__img {
+  width: 20rem;
+  border-radius: 5px;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  transition: transform 1s ease-in-out;
+}
+
+.card__subtitle {
+  position: absolute;
+  bottom: 2rem;
+  padding-left: 12rem;
+  color: var(--background-color);
+}
+.card__img:hover {
+  transform: scale(1.05);
+}
+
+.card__list--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card__list--item li {
+  list-style: none;
+  padding: 1rem;
+  position: relative;
+}
+
+/* INFO SECTION  */
+.info {
+	width: 75%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 4rem;
+	font-size: var(--primary-font);
+	color: var(--active-color);
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .hero-container__img {
+    width: 20rem;
+  }
+  .hero-container__title h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 699px) {
+  .hero-container__img {
+    width: 15rem;
+  }
+  .hero-container__title h1 {
+    font-size: 1.5rem;
+  }
+  .hero-container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .hero-container__title h1 {
+    font-size: 1.5rem;
+  }
+  .hero-container__img {
+    width: 15rem;
+    padding-top: 2rem;
+  }
+  .hero-container__title {
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+  .card_title {
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
